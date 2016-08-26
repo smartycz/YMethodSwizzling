@@ -18,6 +18,7 @@
 		163FF2021D12487A005BA002 /* UITableView+ActionLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 163FF2011D12487A005BA002 /* UITableView+ActionLog.m */; };
 		163FF2041D12772A005BA002 /* ActionLogs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 163FF2031D12772A005BA002 /* ActionLogs.plist */; };
 		163FF2071D12991C005BA002 /* ActionLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 163FF2061D12991C005BA002 /* ActionLogManager.m */; };
+		9695513C4A46EC9147D625B9 /* libPods-YMethodSwizzling.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BDD6F797318BD3D3C20710 /* libPods-YMethodSwizzling.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,9 @@
 		163FF2031D12772A005BA002 /* ActionLogs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ActionLogs.plist; sourceTree = "<group>"; };
 		163FF2051D12991C005BA002 /* ActionLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionLogManager.h; sourceTree = "<group>"; };
 		163FF2061D12991C005BA002 /* ActionLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionLogManager.m; sourceTree = "<group>"; };
+		64BDD6F797318BD3D3C20710 /* libPods-YMethodSwizzling.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YMethodSwizzling.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EE11F030114BA402144679 /* Pods-YMethodSwizzling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMethodSwizzling.release.xcconfig"; path = "Pods/Target Support Files/Pods-YMethodSwizzling/Pods-YMethodSwizzling.release.xcconfig"; sourceTree = "<group>"; };
+		CF22A6544239D5C077D8B3CC /* Pods-YMethodSwizzling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMethodSwizzling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YMethodSwizzling/Pods-YMethodSwizzling.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9695513C4A46EC9147D625B9 /* libPods-YMethodSwizzling.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 			children = (
 				163FF1E21D114EBB005BA002 /* YMethodSwizzling */,
 				163FF1E11D114EBB005BA002 /* Products */,
+				8D0B4200D15B1E56318CB626 /* Pods */,
+				CBD1E5E1E24171C0416F2D36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8D0B4200D15B1E56318CB626 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF22A6544239D5C077D8B3CC /* Pods-YMethodSwizzling.debug.xcconfig */,
+				A4EE11F030114BA402144679 /* Pods-YMethodSwizzling.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBD1E5E1E24171C0416F2D36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64BDD6F797318BD3D3C20710 /* libPods-YMethodSwizzling.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 163FF1F71D114EBB005BA002 /* Build configuration list for PBXNativeTarget "YMethodSwizzling" */;
 			buildPhases = (
+				8156527EFC6C441F05DF2D16 /* [CP] Check Pods Manifest.lock */,
 				163FF1DC1D114EBB005BA002 /* Sources */,
 				163FF1DD1D114EBB005BA002 /* Frameworks */,
 				163FF1DE1D114EBB005BA002 /* Resources */,
+				3078095BF51A4E23EBED75AD /* [CP] Embed Pods Frameworks */,
+				0A05E6A72355958E50D81E12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A05E6A72355958E50D81E12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YMethodSwizzling/Pods-YMethodSwizzling-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3078095BF51A4E23EBED75AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YMethodSwizzling/Pods-YMethodSwizzling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8156527EFC6C441F05DF2D16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		163FF1DC1D114EBB005BA002 /* Sources */ = {
@@ -289,6 +364,7 @@
 		};
 		163FF1F81D114EBB005BA002 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF22A6544239D5C077D8B3CC /* Pods-YMethodSwizzling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YMethodSwizzling/Info.plist;
@@ -300,6 +376,7 @@
 		};
 		163FF1F91D114EBB005BA002 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4EE11F030114BA402144679 /* Pods-YMethodSwizzling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YMethodSwizzling/Info.plist;
